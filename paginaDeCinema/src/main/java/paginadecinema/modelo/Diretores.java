@@ -17,7 +17,7 @@ public class Diretores implements Serializable {
     private Integer idDiretor;
 
     @Column(nullable = false, length = 155)
-    private String nomeDirector;
+    private String nomeDiretor;
 
     @Enumerated(EnumType.STRING)
     private TipoDiretor tipoDiretor;
@@ -33,12 +33,12 @@ public class Diretores implements Serializable {
         this.idDiretor = idDiretor;
     }
 
-    public String getNomeDirector() {
-        return nomeDirector;
+    public String getNomeDiretor() {
+        return nomeDiretor;
     }
 
-    public void setNomeDirector(String nomeDirector) {
-        this.nomeDirector = nomeDirector;
+    public void setNomeDiretor(String nomeDirector) {
+        this.nomeDiretor = nomeDirector;
     }
 
     public TipoDiretor getTipoDiretor() {
