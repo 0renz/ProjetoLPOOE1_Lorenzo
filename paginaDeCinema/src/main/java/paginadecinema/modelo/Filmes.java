@@ -24,7 +24,7 @@ public class Filmes implements Serializable {
 
     @ManyToMany
     @JoinTable(
-        name = "Filme_Roteirista",
+        name = "tb_Filme_Roteirista",
         joinColumns = @JoinColumn(name = "idFilme"),
         inverseJoinColumns = @JoinColumn(name = "idRoteirista")
     )
@@ -32,7 +32,7 @@ public class Filmes implements Serializable {
 
     @ManyToMany
     @JoinTable(
-        name = "Filme_Ator",
+        name = "tb_Filme_Ator",
         joinColumns = @JoinColumn(name = "idFilme"),
         inverseJoinColumns = @JoinColumn(name = "idAtor")
     )
@@ -40,7 +40,7 @@ public class Filmes implements Serializable {
 
     @ManyToMany
     @JoinTable(
-        name = "Filme_Diretor",
+        name = "tb_Filme_Diretor",
         joinColumns = @JoinColumn(name = "idFilme"),
         inverseJoinColumns = @JoinColumn(name = "idDiretor")
     )

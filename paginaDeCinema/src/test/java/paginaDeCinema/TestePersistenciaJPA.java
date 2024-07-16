@@ -32,8 +32,8 @@ public class TestePersistenciaJPA {
             ator1.setSexoAtor(SexoAtor.MASCULINO);
 
             Atores ator2 = new Atores();
-            ator2.setNomeAtor("Meryl Streep");
-            ator2.setSexoAtor(SexoAtor.FEMININO);
+            ator2.setNomeAtor("Michael J Fox");
+            ator2.setSexoAtor(SexoAtor.MASCULINO);
 
             Atores ator3 = new Atores();
             ator3.setNomeAtor("Robert Downey Jr.");
@@ -86,23 +86,23 @@ public class TestePersistenciaJPA {
 
             // Criação dos dublês
             Dubles dublê1 = new Dubles();
-            dublê1.setNomeDuble("Dublê de Leonardo DiCaprio");
+            dublê1.setNomeDuble("Dublê 1");
             dublê1.setAtor(ator1);
 
             Dubles dublê2 = new Dubles();
-            dublê2.setNomeDuble("Dublê de Meryl Streep");
+            dublê2.setNomeDuble("Dublê 2");
             dublê2.setAtor(ator2);
 
             Dubles dublê3 = new Dubles();
-            dublê3.setNomeDuble("Dublê de Robert Downey Jr.");
+            dublê3.setNomeDuble("Dublê 3");
             dublê3.setAtor(ator3);
 
             Dubles dublê4 = new Dubles();
-            dublê4.setNomeDuble("Dublê de Scarlett Johansson");
+            dublê4.setNomeDuble("Dublê 4");
             dublê4.setAtor(ator4);
 
             Dubles dublê5 = new Dubles();
-            dublê5.setNomeDuble("Dublê de Tom Hanks");
+            dublê5.setNomeDuble("Dublê 5");
             dublê5.setAtor(ator5);
 
             // Criação dos filmes
@@ -111,30 +111,30 @@ public class TestePersistenciaJPA {
             filme1.setDataEstreia(new GregorianCalendar(2010, Calendar.JULY, 16));
             filme1.setNotaIMDb(8.8);
             filme1.setAtores(Arrays.asList(ator1, ator4));
-            filme1.setDiretores(Arrays.asList(diretor2));
+            filme1.setDiretores(Arrays.asList(diretor2, diretor1));
             filme1.setRoteiristas(Arrays.asList(roteirista2));
 
             Filmes filme2 = new Filmes();
-            filme2.setNomeFilme("The Iron Lady");
-            filme2.setDataEstreia(new GregorianCalendar(2011, Calendar.DECEMBER, 30));
-            filme2.setNotaIMDb(6.4);
+            filme2.setNomeFilme("Back to the future");
+            filme2.setDataEstreia(new GregorianCalendar(1985, Calendar.JULY, 3));
+            filme2.setNotaIMDb(8.5);
             filme2.setAtores(Arrays.asList(ator2));
             filme2.setDiretores(Arrays.asList(diretor3));
-            filme2.setRoteiristas(Arrays.asList(roteirista1));
+            filme2.setRoteiristas(Arrays.asList(roteirista1, roteirista2, roteirista3));
 
             Filmes filme3 = new Filmes();
             filme3.setNomeFilme("Avengers: Endgame");
             filme3.setDataEstreia(new GregorianCalendar(2019, Calendar.APRIL, 26));
             filme3.setNotaIMDb(8.4);
             filme3.setAtores(Arrays.asList(ator3, ator4));
-            filme3.setDiretores(Arrays.asList(diretor5));
-            filme3.setRoteiristas(Arrays.asList(roteirista3));
+            filme3.setDiretores(Arrays.asList(diretor5, diretor1));
+            filme3.setRoteiristas(Arrays.asList(roteirista3, roteirista1));
 
             Filmes filme4 = new Filmes();
             filme4.setNomeFilme("Forrest Gump");
             filme4.setDataEstreia(new GregorianCalendar(1994, Calendar.JULY, 6));
             filme4.setNotaIMDb(8.8);
-            filme4.setAtores(Arrays.asList(ator5));
+            filme4.setAtores(Arrays.asList(ator5, ator1));
             filme4.setDiretores(Arrays.asList(diretor1));
             filme4.setRoteiristas(Arrays.asList(roteirista4));
 
