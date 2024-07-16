@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package paginadecinema;
 
-/**
- *
- * @author loren
- */
 public class PaginaDeCinema {
 
     public static void main(String[] args) {
